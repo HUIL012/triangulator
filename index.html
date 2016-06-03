@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta charset="UTF-8" />      
+    <title>somestuff.ru | I♥∆ </title>
+ <script type="text/javascript" src="js/jquery.js"></script>              
+ <script type="text/javascript" src="js/jquery-ui.js"></script>              
+ <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript" src="js/triangulatr.js"></script>
+ <script type="text/javascript" src="js/interface.js"></script>
+ <script type="text/javascript" src="js/base64.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.8.9.custom.css" />
+  </head>
+  <body onload="init();">
+    <div id="basicOps">
+	<div id="trBox" class="button"><div id="transparencySlider"></div></div>
+	<div class="button"><a href="#" id="svgSaver">导出</a> 成SVG文件<span id="svgFile"></span></div>
+	<div id="recycleBox" class="button"><a href="#" title="Delete all vertices" id="recycler">删除所有顶点</a></div>
+	<div class="button">添加25个顶点: <a href="#" id="randomGenerator">随机添加</a></div>
+</div>
+	
+	</div>
+<div class="cleaner"></div>
+<div id="canvasContainer">
+    <canvas id="sourceImg" width="600" height="600"></canvas>    
+    <canvas id="canvas" width="600" height="600"></canvas>    
+</div>    
+<div class="cleaner"></div>	
+	
+<div id="wrapper">
+<div id="intro">
+<header id="header">
+<img src="i/logo.png" alt="I♥∆"/>
+<h1>Simple web-based tool that lets you convert bitmap images to the beautiful artworks</h1></header>
+<div id="holder" class="normal">将你的图片文件拖动到此处</div>
+<article>
+<section id="tutorial">
+<p>工作原理:</p>
+<ul>
+    <li>Place point on the canvas</li>
+<li>I♥∆ will generate mesh using <a href="http://en.wikipedia.org/wiki/Delaunay_triangulation">Delaunay triangulation</a> and average color of triangles coverage area.</li>
+<!--<li>Export canvas to SVG and save it to your Desktop</li>
+<li>Enjoy your beautiful artwork in any vector editor that supports SVG.</li>-->
+<li><a href="http://v.youku.com/v_show/id_XODEzMTAwMjg0.html">❤这里</a>有个视频小教程</li>
+</ul>
+<p>Sorry guys, it works only with browsers with File API support.</p>
+</section>
+</article>
+<footer>
+<a href="http://www.w3.org/html/logo/" id="h5"><img  src="i/h5.png" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"/></a>
+<a href="mailto:staff@somestuff.ru" style="float:right; margin-top:5px">Feedback</a>
+</footer>	
+</div>	
+</div>
+
+  <a href="#" id="svgSaver"></a>
+  </body>
+</html>
